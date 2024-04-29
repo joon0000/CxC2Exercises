@@ -6,7 +6,7 @@ pipeline {
         stage('Check Permissions') {
             steps {
                 sh 'pwd'
-                sh 'sudo chmod -R 777 /var/jenkins_home/workspace/CxE-pipe2'
+                sh 'chmod -R 777 /var/jenkins_home/workspace/CxE-pipe2'
                 sh 'cd ..'
                 sh 'pwd'
                 sh 'ls -al | grep CxE-pipe2'
