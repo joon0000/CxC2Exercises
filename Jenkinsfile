@@ -3,12 +3,12 @@ pipeline {
     agent any  
 
     stages {
-        stage('Check Permissions') {
-            steps {
-                sh 'pwd'
-                sh 'chmod -R 777 /var/jenkins_home/workspace/CxE-pipe2'
-            }
-        }
+        // stage('Check Permissions') {
+        //     steps {
+        //         sh 'pwd'
+        //         sh 'chmod -R 777 /var/jenkins_home/workspace/CxE-pipe2'
+        //     }
+        // }
         stage('Checkmarx') {
             steps {
                 echo 'Checkmarx'
