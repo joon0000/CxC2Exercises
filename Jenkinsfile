@@ -12,7 +12,7 @@ pipeline {
         stage('Checkmarx') {
             steps {
                 echo 'Checkmarx'
-                checkmarxASTScanner additionalOptions: '', baseAuthUrl: '', branchName: '', checkmarxInstallation: 'cx', credentialsId: '', projectName: '', serverUrl: '', tenantName: '', useOwnAdditionalOptions: true
+                checkmarxASTScanner additionalOptions: '', baseAuthUrl: '', branchName: '', checkmarxInstallation: 'cx', credentialsId: '', projectName: 'CxE-pipe2', serverUrl: '', tenantName: '', useOwnAdditionalOptions: true
             }
         }
 
