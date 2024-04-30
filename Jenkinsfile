@@ -16,7 +16,7 @@ pipeline {
                 checkmarxASTScanner additionalOptions: '--project-groups My-POC-Group --scan-types sast', baseAuthUrl: '', branchName: '', checkmarxInstallation: 'cx', credentialsId: '', projectName: 'jenkins-pipeline', serverUrl: '', tenantName: '', useOwnAdditionalOptions: true
             }
         }
-        stage('Check Permissions') {
+        stage('test') {
             steps {
                 sh 'pwd'
                 sh 'ls -al'
