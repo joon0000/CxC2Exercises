@@ -20,7 +20,11 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'ls -al'
-                // sh 'chmod -R 777 /var/jenkins_home/workspace/CxE-pipe2'
+            }
+        }
+        post {
+            always {
+                archiveArtifacts artifacts: '*.pdf', onlyIfSuccessful: true
             }
         }
 
